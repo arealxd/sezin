@@ -2,7 +2,7 @@ import axios from "axios"
 import $storage from "@/storage"
 
 const ERROR_STATUSES = { NOT_AUTHORIZED: 401, FORBIDDEN: 403 }
-const instance = axios.create({ baseURL: "http://10.10.10.96:8080" })
+const instance = axios.create({ baseURL: "http://192.168.1.138:8080" })
 instance.defaults.headers.common["Content-Type"] = "application/json"
 
 // instance.defaults.headers.common['Role'] = 'ADMIN';
